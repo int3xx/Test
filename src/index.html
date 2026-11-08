@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INT3X — Discord server management</title>
+<meta name="description" content="INT3X is a Discord application for server management and moderation. Launching soon.">
+<meta name="theme-color" content="#030000">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@600;800&display=swap"><link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div class="bg"></div><div id="particles"></div>
+<header class="nav" id="nav"><a class="logo" href="index.html">INT3X</a><nav class="links"><a href="index.html#top">Home</a><a href="index.html#features">Features</a><button class="btn" data-open>Send a message</button></nav></header>
+<main id="top">
+<div class="hero">
+<div class="status"><span class="dot"></span>Under development</div>
+<h1>INT3X</h1>
+<p class="lead">A Discord application for managing and moderating your server. Launching soon.</p>
+<div class="cta"><a class="btn" href="#features">Explore features</a><button class="btn ghost" data-open>Send a message</button></div>
+</div>
+<section id="features"><div class="wrap">
+<h2>What INT3X does</h2>
+<p class="sub">Tap any icon to see it in action.</p>
+<div class="grid">
+<button class="tile" data-fx="shield"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span><h3>Moderation</h3><p>Warn, mute and ban from one place, with every action recorded.</p></span></button>
+<button class="tile" data-fx="sliders"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span><span><h3>Server settings</h3><p>Save a setup for each server and change it any time.</p></span></button>
+<button class="tile" data-fx="term"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 10l3 2-3 2M13 15h4"/></svg></span><span><h3>Slash commands</h3><p>Everything runs from simple commands inside Discord.</p></span></button>
+<button class="tile" data-fx="logs"><span class="ico"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7M9 7h3"/></svg></span><span><h3>Activity logs</h3><p>See who did what, and when, across your server.</p></span></button>
+<button class="tile" data-fx="bolt"><span class="ico"><svg viewBox="0 0 24 24"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span><span><h3>Fast replies</h3><p>Commands answer quickly, even on busy servers.</p></span></button>
+<button class="tile" data-fx="chat" data-open-after><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8"/></svg></span><span><h3>Get in touch</h3><p>Questions or ideas? Send us a message.</p></span></button>
+</div></div></section>
+</main>
+<footer><nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>© 2026 INT3X</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="card">
+<button class="x" id="close" aria-label="Close">×</button>
+<h2 id="mt">Send a message</h2><p class="sub">Write your message and we will get it directly.</p>
+<label for="u">Name</label><input id="u" maxlength="50" placeholder="Your name">
+<label for="m">Message</label><textarea id="m" maxlength="1000" placeholder="Your message"></textarea>
+<button class="btn" id="send">Send message</button><div class="result" id="res" role="status"></div>
+</div></div>
+<script src="assets/app.js"></script>
+</body></html>
